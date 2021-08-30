@@ -1,0 +1,23 @@
+int n,max;
+    bool bandera=false;
+    
+    cin>>n;
+    
+    while(n!=0)
+    {
+
+        if(bandera=false)
+        {
+            max=n;
+            bandera=true;
+        }
+        else
+        {
+            if(n>max && n!=0)
+            {
+                max=n;
+            }
+        }
+        cin>>n;
+    }
+    cout<<max;
